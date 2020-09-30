@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color: cadetblue;
+            height: 3444px;
+        }
+        .box{
+            border: 2px solid red;
+            height: 130px;
+            width: 150px;
+            margin: 2px;
+            display: inline-block;
+            background-color: rgb(170, 170, 248);
+        }
+        #box3{
+            /* relative: element will move relative to its initial poisition, gap will be seen */
+            /* position: relative;
+            top: 100px;
+            left: 10px; */
+
+            /* relative: element will move relative to its initial parent, no gap will be seen */
+            /* position: absolute;
+            top: 100px;
+            left: 10px;             */
+
+            /* position fixed will fix the position of the container from the given range relative to the browser window*/
+            /* position:fixed;
+            right: 20px;
+            bottom: 20px; */
+
+            position: sticky;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+</html>
